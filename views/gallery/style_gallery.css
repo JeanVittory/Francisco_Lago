@@ -1,0 +1,485 @@
+/* Formateo de estilos */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.body-gallery{
+    background-color: #9E2A2B;
+    overflow-y: hidden;
+    
+}
+
+/*Navegador + Logo*/
+
+.nav-container-gallery{
+    width: 100vw;
+    margin: 1rem 2rem;
+    position: fixed;
+}
+
+.nav-container-flex-gallery{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container-gallery ul{
+    list-style: none;
+    width: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.nav-container-gallery li{
+    padding: 0 .75rem;
+}
+
+.nav-container-gallery a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: .3rem .5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    color: #CCC5B9;
+    transition: background-color .2s ease-in-out;
+}
+
+.nav-container-gallery a:hover{
+    background-color: rgba(235, 192, 40, .3);
+    border-radius: 2px;
+}
+
+.nav-container-gallery > h1 span{
+    font-size: 2.25rem;
+    font-family: 'Roboto', sans-serif;
+    color: #FFFCF2;
+}
+
+.nav-container-gallery span:nth-child(1) {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    letter-spacing: -0.055rem
+}
+
+.nav-container-gallery span:nth-child(2){
+    font-weight: 500;
+    letter-spacing: -0.055rem;
+}
+
+.nav-container-gallery span:nth-child(3){
+    font-weight: 400;
+    letter-spacing: 0.045rem;
+}
+
+
+/*Estilos de fotos*/
+
+.banner-fotos-container-gallery{
+    width: 200%;
+    height: 100vh;
+    padding-top: 69px; 
+    white-space: nowrap;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.banner-grid-1{
+    width: 50%;
+    height: 100%;
+}
+
+.banner-grid-2{
+    width: 50%;
+    height: 100%;
+}
+
+.banner-grid-3{
+    width: 50%;
+    height: 100%;
+}
+
+.banner-grid-4{
+    width: 50%;
+    height: 100%;
+}
+
+.banner-fotos-container-gallery img{
+    width: 100%;
+}
+
+/* Banner grid 1*/
+
+.banner-grid-1{
+    display: grid;
+    grid-template-areas: 
+    "foto1 foto1 foto2 foto2"
+    "foto3 foto4 foto4 foto4"
+    "foto3 foto6 foto6 foto7"
+    "foto5 foto6 foto6 foto7"
+    "foto5 foto6 foto6 foto8";
+    grid-template-columns: 32.7% 19.1% 19.1% 29.1%;
+    grid-template-rows: 25.4% 25.4% 13.8% 11.9% 23.5%;
+}
+
+/* Banner grid 2*/
+
+.banner-grid-2{
+    display: grid;
+    grid-template-areas: 
+    "foto9 foto10 foto10 foto10"
+    "foto11 foto12 foto12 foto13"
+    "foto11 foto12 foto12 foto16"
+    "foto14 foto12 foto12 foto16"
+    "foto14 foto15 foto15 foto16";
+    grid-template-columns: 32.7% 19.1% 19.1% 29.1%;
+    grid-template-rows: 25.4% 25.4% 13.8% 11.9% 23.5%;
+}
+
+/* Banner grid 3*/
+
+.banner-grid-3{
+    display: grid;
+    grid-template-areas: 
+    "foto17 foto17 foto18 foto18"
+    "foto19 foto20 foto20 foto21"
+    "foto22 foto20 foto20 foto24"
+    "foto22 foto20 foto20 foto24"
+    "foto22 foto23 foto23 foto24";
+    grid-template-columns: 32.7% 19.1% 19.1% 29.1%;
+    grid-template-rows: 25.4% 25.4% 13.8% 11.9% 23.5%;
+}
+
+
+/* Banner grid 4*/
+
+.banner-grid-4{
+    display: grid;
+    grid-template-areas: 
+    "foto25 foto25 foto26 foto26"
+    "foto27 foto28 foto28 foto29"
+    "foto27 foto31 foto31 foto29"
+    "foto30 foto31 foto31 foto32"
+    "foto30 foto31 foto31 foto32";
+    grid-template-columns: 32.7% 19.1% 19.1% 29.1%;
+    grid-template-rows: 25.4% 25.4% 13.8% 11.9% 23.5%;
+}
+
+/* GRID AREA*/
+
+/* Banner grid 1*/
+
+.banner-fotos-container-gallery .foto1{
+    grid-area: foto1;
+} 
+
+.banner-fotos-container-gallery .foto2{
+    grid-area:  foto2;
+}
+
+.banner-fotos-container-gallery .foto3{
+    grid-area: foto3;
+}
+
+.banner-fotos-container-gallery .foto4{
+    grid-area: foto4;
+}
+
+.banner-fotos-container-gallery .foto5{
+    grid-area: foto5;
+}
+
+.banner-fotos-container-gallery .foto6{
+    grid-area: foto6;
+}
+
+.banner-fotos-container-gallery .foto7{
+    grid-area: foto7;
+}
+
+.banner-fotos-container-gallery .foto8{
+    grid-area: foto8;
+}
+
+/* Banner grid 2 */
+
+.banner-fotos-container-gallery .foto9{
+    grid-area: foto9;
+} 
+
+.banner-fotos-container-gallery .foto10{
+    grid-area: foto10;
+}
+
+.banner-fotos-container-gallery .foto11{
+    grid-area: foto11;
+}
+
+.banner-fotos-container-gallery .foto12{
+    grid-area: foto12;
+}
+
+.banner-fotos-container-gallery .foto13{
+    grid-area: foto13;
+}
+
+.banner-fotos-container-gallery .foto14{
+    grid-area: foto14;
+}
+
+.banner-fotos-container-gallery .foto15{
+    grid-area: foto15;
+}
+
+.banner-fotos-container-gallery .foto16{
+    grid-area: foto16;
+}
+
+/* Banner grid 3 */
+
+.banner-fotos-container-gallery .foto17{
+    grid-area: foto17;
+} 
+
+.banner-fotos-container-gallery .foto18{
+    grid-area: foto18;
+}
+
+.banner-fotos-container-gallery .foto19{
+    grid-area: foto19;
+}
+
+.banner-fotos-container-gallery .foto20{
+    grid-area: foto20;
+}
+
+.banner-fotos-container-gallery .foto21{
+    grid-area: foto21;
+}
+
+.banner-fotos-container-gallery .foto22{
+    grid-area: foto22;
+}
+
+.banner-fotos-container-gallery .foto23{
+    grid-area: foto23;
+}
+
+.banner-fotos-container-gallery .foto24{
+    grid-area: foto24;
+}
+
+.banner-fotos-container-gallery .foto25{
+    grid-area: foto25;
+}
+
+.banner-fotos-container-gallery .foto26{
+    grid-area: foto26;
+}
+
+.banner-fotos-container-gallery .foto27{
+    grid-area: foto27;
+}
+
+.banner-fotos-container-gallery .foto28{
+    grid-area: foto28;
+}
+
+.banner-fotos-container-gallery .foto29{
+    grid-area: foto29;
+}
+
+.banner-fotos-container-gallery .foto30{
+    grid-area: foto30;
+}
+
+.banner-fotos-container-gallery .foto31{
+    grid-area: foto31;
+}
+
+.banner-fotos-container-gallery .foto32{
+    grid-area: foto32;
+}
+
+.banner-grid-1 div:hover{
+    
+    transition: transform .5s ease-in-out;
+
+}
+
+/* Estilos de fotos del banner grid 1*/
+
+.banner-grid-1 div{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: 50% 50%;
+    border: 1px solid #452414;
+}
+
+.banner-grid-1 div:nth-child(1){
+    background-image: url(../../gallery/assets/foto1.jpg);  
+}
+
+.banner-grid-1 div:nth-child(2){
+    background-image: url(../../gallery/assets/foto2.jpg);
+}
+
+.banner-grid-1 div:nth-child(3){
+    background-image: url(../../gallery/assets/foto3.jpg);
+}
+
+.banner-grid-1 div:nth-child(4){
+    background-image: url(../../gallery/assets/foto4.jpg);
+}
+
+.banner-grid-1 div:nth-child(5){
+    background-image: url(../../gallery/assets/foto5.jpg);
+}
+
+.banner-grid-1 div:nth-child(6){
+    background-image: url(../../gallery/assets/foto6.jpg);
+}
+
+.banner-grid-1 div:nth-child(7){
+    background-image: url(../../gallery/assets/foto7.jpg);
+}
+
+.banner-grid-1 div:nth-child(8){
+    background-image: url(../../gallery/assets/foto8.jpg);
+}
+
+/* Estilos de fotos del banner grid 2*/
+
+.banner-grid-2 div{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: 50% 50%;
+    border: 1px solid #452414;
+}
+
+.banner-grid-2 div:nth-child(1){
+    background-image: url(../../gallery/assets/foto9.jpg);  
+}
+
+.banner-grid-2 div:nth-child(2){
+    background-image: url(../../gallery/assets/foto10.jpg);
+}
+
+.banner-grid-2 div:nth-child(3){
+    background-image: url(../../gallery/assets/foto11.jpg);
+}
+
+.banner-grid-2 div:nth-child(4){
+    background-image: url(../../gallery/assets/foto12.jpg);
+}
+
+.banner-grid-2 div:nth-child(5){
+    background-image: url(../../gallery/assets/foto13.jpg);
+}
+
+.banner-grid-2 div:nth-child(6){
+    background-image: url(../../gallery/assets/foto14.jpg);
+}
+
+.banner-grid-2 div:nth-child(7){
+    background-image: url(../../gallery/assets/foto15.jpg);
+}
+
+.banner-grid-2 div:nth-child(8){
+    background-image: url(../../gallery/assets/foto16.jpg);
+}
+
+/* Estilos de fotos del banner grid 3*/
+
+.banner-grid-3 div{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: 50% 50%;
+    border: 1px solid #452414;
+}
+
+.banner-grid-3 div:nth-child(1){
+    background-image: url(../../gallery/assets/foto17.jpg);  
+}
+
+.banner-grid-3 div:nth-child(2){
+    background-image: url(../../gallery/assets/foto18.jpg);
+}
+
+.banner-grid-3 div:nth-child(3){
+    background-image: url(../../gallery/assets/foto19.jpg);
+}
+
+.banner-grid-3 div:nth-child(4){
+    background-image: url(../../gallery/assets/foto20.jpg);
+}
+
+.banner-grid-3 div:nth-child(5){
+    background-image: url(../../gallery/assets/foto21.jpg);
+}
+
+.banner-grid-3 div:nth-child(6){
+    background-image: url(../../gallery/assets/foto22.jpg);
+}
+
+.banner-grid-3 div:nth-child(7){
+    background-image: url(../../gallery/assets/foto23.jpg);
+}
+
+.banner-grid-3 div:nth-child(8){
+    background-image: url(../../gallery/assets/foto24.jpg);
+}
+
+/* Estilos de fotos del banner grid 4*/
+
+.banner-grid-4 div{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: 50% 50%;
+    border: 1px solid #452414;
+}
+
+.banner-grid-4 div:nth-child(1){
+    background-image: url(../../gallery/assets/foto25.jpg);  
+}
+
+.banner-grid-4 div:nth-child(2){
+    background-image: url(../../gallery/assets/foto26.jpg);
+}
+
+.banner-grid-4 div:nth-child(3){
+    background-image: url(../../gallery/assets/foto27.jpg);
+}
+
+.banner-grid-4 div:nth-child(4){
+    background-image: url(../../gallery/assets/foto28.jpg);
+}
+
+.banner-grid-4 div:nth-child(5){
+    background-image: url(../../gallery/assets/foto29.jpg);
+}
+
+.banner-grid-4 div:nth-child(6){
+    background-image: url(../../gallery/assets/foto30.jpg);
+}
+
+.banner-grid-4 div:nth-child(7){
+    background-image: url(../../gallery/assets/foto31.jpg);
+}
+
+.banner-grid-4 div:nth-child(8){
+    background-image: url(../../gallery/assets/foto32.jpg);
+}

@@ -1,0 +1,239 @@
+/* Formateo de estilos */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+/* Fondo */
+
+body{
+    background-color: #FFECD1;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly ;
+}
+
+/* H1 */
+
+.h1-imagenes-container-contact > h1{
+    margin: 1rem 2rem;
+}
+
+.h1-imagenes-container-contact > h1 span{
+    font-size: 2.25rem;
+    font-family: 'Roboto', sans-serif;
+    color: #452414;
+}
+
+.h1-imagenes-container-contact span:nth-child(1) {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    letter-spacing: -0.055rem
+}
+
+.h1-imagenes-container-contact span:nth-child(2){
+    font-weight: 500;
+    letter-spacing: -0.055rem;
+}
+
+.h1-imagenes-container-contact span:nth-child(3){
+    font-weight: 400;
+    letter-spacing: 0.045rem;
+}
+
+/* Estilos imágenes*/
+
+.section-imagenes-contact{
+    margin-top: 2rem;
+}
+
+.imagenes-flex-contact{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.h1-imagenes-container-contact{
+    width: 44%;
+    height: auto;
+}
+
+.h1-imagenes-container-contact div{
+    margin-left: 2rem;
+}
+
+.h1-imagenes-container-contact img{
+    width: 100%;
+}
+
+.h1-imagenes-container-contact div:nth-child(1){
+    width: 32.2%;
+    height: 540px;
+    background-image: url(../../contact/assets/foto1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: 50% 50%;
+}
+
+.h1-imagenes-container-contact div:nth-child(2){
+    width: 32.2%;
+    height: 540px;
+    background-image: url(../../contact/assets/foto2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.h1-imagenes-container-contact div:nth-child(3){
+    width: 32.2%;
+    height: 540px;
+    background-image: url(../../contact/assets/foto3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.divition-line-contact{
+    height: 100vh;
+}
+
+/* Navegador*/
+
+.nav-container-contact{
+    margin: 1rem 0;
+}
+
+.nav-container-contact ul{
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+
+.nav-container-contact li{
+    padding: .3rem .75rem;
+}
+
+.nav-container-contact a{
+    text-decoration: none;
+    padding: .3rem .5rem;
+    font-size: 1.3rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    color: #452414;
+    transition: background-color .2s ease-in-out;
+}
+
+.nav-container-contact a:hover{
+    text-decoration: underline;
+    border-radius: 2px;    
+}
+
+/*Form + footer */
+
+.form-footer-contact{
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
+
+/* Formulario */
+
+.form-contact{
+    width: 100%;
+}
+
+.form-container-contact h2{
+    font-family: 'Roboto', sans-serif;
+    color: #452414;
+    font-weight: normal;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    display: inline-block;
+}
+
+.form-container-contact input[type="text"],
+.form-container-contact input[type="email"], 
+.form-container-contact textarea{
+    width: 100%;
+    color: #452414;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.18rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #452414;
+    padding-top: 2.5rem;
+}
+
+.form-container-contact textarea{
+    resize: none;
+}
+
+.container-submit-contact{
+    width: 100%;
+    text-align: end;
+}
+
+.form-container-contact input[type="submit"]{
+    background-color: transparent;
+    color: #452414;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    border-bottom: 1px solid #452414;
+    cursor: pointer;
+    border: 1px solid #452414;
+    border-radius: 2px;
+    margin-top: 2rem;
+    padding: .5rem;
+    
+}
+
+/* Footer */
+
+.footer-container-contact hr{
+    margin-top: 2rem;
+}
+
+.footer-container-contact{
+    text-align: center;
+}
+
+.footer-container-contact a{
+    margin-left:  2rem;
+}
+
+.footer-container-contact i {
+    font-size: 1.5rem;
+    color: #452414;
+    padding: 1rem 0;
+}
+
+.fa-instagram, 
+.fa-youtube, 
+.fa-behance, 
+.fa-linkedin{
+    transition: all .3s ease-in-out;
+}
+
+.footer-container-contact .fa-instagram:hover{
+    color: #515BD4;
+}
+
+.footer-container-contact .fa-youtube:hover{
+    color: #FF0000;
+}
+
+.footer-container-contact .fa-behance:hover{
+    color: #00825A;
+}
+
+.footer-container-contact .fa-linkedin:hover{
+    color: #0077B5;
+}

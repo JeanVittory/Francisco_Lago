@@ -1,0 +1,26 @@
+$colors: (
+    "bg-index": #EB5E28,
+    "bg-about": #D7B377,
+    "bg-contact": #FFECD1,
+    "color-logo": #FFFCF2,
+    "color-logo-dark":#452414,
+    "color-text": #FFFCF2,
+    "color-nav-dark": #452414,
+    "color-text-about": #44342c,
+    "color-text-contact": #452414,
+    "text-link-color": hsl(38, 16%, 76%),
+    "text-link-hover":rgba(235, 192, 40, .3),
+    "borders": #452414,
+    "bars": #CCC5B9,
+    "colors-icons-social":rgba(204, 197, 185, 1),
+    "color-icons-social-dark": #452414,
+    "instagram": #515BD4,
+    "youtube": #FF0000,
+    "behance": #00825A,
+    "linkedin": #0077B5,
+    "bg-card-mobile": #5e28eb 
+);
+
+@function color($color-name){
+    @return map-get($colors, $color-name)
+}
