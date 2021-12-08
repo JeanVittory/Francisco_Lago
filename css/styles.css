@@ -398,6 +398,9 @@ hr {
   margin-top: 1rem;
   text-align: center; }
 
+.small-bars-about {
+  display: none; }
+
 .nav-container-about > ul {
   position: relative;
   width: 100%; }
@@ -516,6 +519,47 @@ hr {
 
 .footer-container-about .fa-linkedin:hover {
   color: #0077B5; }
+
+@media screen and (max-width: 900px) {
+  .body-about {
+    overflow-y: visible; }
+  .about-container-flex > div {
+    order: -1;
+    width: 50%; }
+  .about-container p {
+    width: 100%; }
+  .bio {
+    padding: 2rem; }
+  .about-container {
+    width: 100%;
+    height: auto;
+    margin-top: 2.5rem;
+    padding: 0 2rem; }
+  .about-container-flex {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center; } }
+
+@media screen and (max-width: 650px) {
+  .nav-container-about h1 > span {
+    font-size: 3rem; }
+  .about-container-flex > div {
+    width: 80%; } }
+
+@media screen and (max-width: 530px) {
+  .nav-container-about ul {
+    display: none; }
+  .small-bars-about {
+    display: block;
+    color: #452414;
+    margin-top: .5rem; }
+  .small-bars-about i {
+    font-size: 1.5rem; } }
+
+@media screen and (max-width: 450px) {
+  .nav-container-about h1 > span {
+    font-size: 2.5rem; } }
 
 /* ABOUT.HTML */
 /* CONTACT.HTML */
