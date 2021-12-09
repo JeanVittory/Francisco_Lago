@@ -568,8 +568,7 @@ hr {
   background-color: #FFECD1;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-evenly;
-  overflow: hidden; }
+  justify-content: space-evenly; }
 
 /* H1 */
 .h1-imagenes-container-contact > h1 {
@@ -604,6 +603,10 @@ hr {
 .h1-imagenes-container-contact {
   width: 44%;
   height: auto; }
+
+.form-container-contact {
+  width: 50%;
+  height: 100%; }
 
 .h1-imagenes-container-contact div {
   margin-left: 2rem; }
@@ -644,31 +647,31 @@ hr {
   font-size: 1.3rem;
   font-family: "Roboto", sans-serif;
   font-weight: lighter;
-  color: #452414;
-  transition: background-color .2s ease-in-out; }
+  color: #452414; }
 
 .nav-container-contact a:hover {
-  text-decoration: underline;
-  border-radius: 2px; }
+  text-decoration: underline; }
 
 /*Form + footer */
 .form-footer-contact {
-  height: 100vh;
+  width: 100%;
+  height: auto;
   display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-evenly; }
+  flex-flow: column nowrap; }
 
 /* Formulario */
 .form-contact {
-  width: 100%; }
+  width: 100%;
+  height: auto; }
 
 .form-container-contact h2 {
   font-family: "Roboto", sans-serif;
   color: #452414;
   font-weight: normal;
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 3.5rem;
-  display: inline-block; }
+  display: inline-block;
+  margin-top: 6.4rem; }
 
 .form-container-contact input[type="text"],
 .form-container-contact input[type="email"],
@@ -705,20 +708,20 @@ hr {
 
 /* Footer */
 .footer-container-contact hr {
-  margin-top: 2rem;
   border: 1px solid #452414;
   background-color: #452414; }
 
 .footer-container-contact {
-  text-align: center; }
+  text-align: center;
+  margin-top: 6rem; }
 
 .footer-container-contact a {
-  margin-left: 2rem; }
+  padding: 0 1rem; }
 
 .footer-container-contact i {
   font-size: 1.5rem;
   color: #452414;
-  padding: 1rem 0; }
+  padding: .5rem 0; }
 
 .fa-instagram,
 .fa-youtube,
@@ -737,6 +740,102 @@ hr {
 
 .footer-container-contact .fa-linkedin:hover {
   color: #0077B5; }
+
+.nav-devices {
+  display: none; }
+
+.form-footer-contact p {
+  display: none; }
+
+.bars {
+  display: none; }
+
+@media screen and (max-width: 1080px) {
+  .body-contact {
+    flex-direction: column;
+    overflow-y: visible; }
+  .section-imagenes-contact,
+  .nav-container-contact {
+    display: none; }
+  .h1-imagenes-container-contact,
+  .form-container-contact {
+    width: 100%; }
+  .divition-line-contact {
+    display: none; }
+  .h1-imagenes-container-contact {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between; }
+  .nav-devices {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 1rem 2rem;
+    list-style: none; }
+  .nav-devices li {
+    padding: .3rem .75rem; }
+  .nav-devices a {
+    color: #452414;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    padding: .3 .5rem;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    text-align: center; }
+  .nav-devices a:hover {
+    text-decoration: underline; }
+  .form-container-contact {
+    width: 70%;
+    margin: 0 auto; }
+  .footer-container-contact {
+    margin-top: 6.5rem; }
+  .form-footer-contact {
+    margin-top: 2.5rem; }
+  .form-footer-contact h2 {
+    margin-top: 0; }
+  .form-container-contact p {
+    display: block;
+    font-family: "Roboto", sans-serif;
+    color: #44342c;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: 1rem 0; } }
+
+@media screen and (max-width: 960px) {
+  .h1-imagenes-container-contact {
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center; }
+  .h1-imagenes-container-contact h1 {
+    margin: 1rem auto 0 auto; }
+  .h1-imagenes-container-contact h1 > span {
+    font-size: 4.5rem; }
+  .h1-imagenes-container-contact ul {
+    margin: 0 auto; }
+  .form-footer-contact h2 {
+    font-size: 2rem; } }
+
+@media screen and (max-width: 670px) {
+  .h1-imagenes-container-contact h1 > span {
+    font-size: 3.5rem; }
+  .nav-devices {
+    display: none; }
+  .bars {
+    display: block; }
+  .h1-imagenes-container-contact i {
+    color: #452414;
+    font-size: 1.5rem;
+    margin-top: .5rem; }
+  .form-footer-contact h2 {
+    font-size: 1.8rem; }
+  .form-footer-contact p {
+    font-size: 1rem; } }
+
+@media screen and (max-width: 500px) {
+  .h1-imagenes-container-contact h1 > span {
+    font-size: 3rem; }
+  .form-footer-contact h2 {
+    font-size: 1.4rem; } }
 
 /* FILM.HTML */
 /* Fondo */
