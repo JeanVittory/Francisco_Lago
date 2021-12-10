@@ -1179,7 +1179,7 @@ hr{
 
 
 .nav-container-film{
-  margin: 1rem 2rem;
+  margin: 1rem 2rem 1rem 2rem;
 }
 
 .nav-container-flex-film{
@@ -1191,19 +1191,17 @@ hr{
 
 .nav-container-film > ul{
   list-style: none;
-  width: 49%;
   display: flex;
   flex-flow: row nowrap;
 }
 
 .nav-container-film li{
-  padding: 0 .75rem;
-      
+  padding: 0 .75rem;  
 }
 
 .nav-container-film a{
   text-decoration: none;
-  padding: 0 .5rem;
+  padding: .1rem .5rem;
   font-size: 1.3rem;
   font-family: $ff-primary;
   font-weight: lighter;
@@ -1241,7 +1239,7 @@ hr{
 /*Estilos de video*/
 
 .video-container-film{
-  margin: 2rem;
+  margin: 2rem 0;
 }
 
 .video-container-film video{
