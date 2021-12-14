@@ -1325,12 +1325,13 @@ hr{
 /*Navegador + Logo*/
 
 .nav-container-gallery{
-  width: 100vw;
-  margin: 1rem 2rem;
+  width: 100%;
+  padding: 1rem 2rem;
   position: fixed;
 }
 
 .nav-container-flex-gallery{
+  width: 100%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
