@@ -170,28 +170,28 @@ h1 {
   border: 1px solid #452414; }
 
 .banner-fotos-container div:nth-child(1) {
-  background-image: url(assets-index/foto1.jpg); }
+  background-image: url(../assets-index/foto1.jpg); }
 
 .banner-fotos-container div:nth-child(2) {
-  background-image: url(assets-index/foto2.jpg); }
+  background-image: url(../assets-index/foto2.jpg); }
 
 .banner-fotos-container div:nth-child(3) {
-  background-image: url(assets-index/foto3.jpg); }
+  background-image: url(../assets-index/foto3.jpg); }
 
 .banner-fotos-container div:nth-child(4) {
-  background-image: url(assets-index/foto4.jpg); }
+  background-image: url(../assets-index/foto4.jpg); }
 
 .banner-fotos-container div:nth-child(5) {
-  background-image: url(assets-index/foto5.jpg); }
+  background-image: url(../assets-index/foto5.jpg); }
 
 .banner-fotos-container div:nth-child(6) {
-  background-image: url(assets-index/foto6.jpg); }
+  background-image: url(../assets-index/foto6.jpg); }
 
 .banner-fotos-container div:nth-child(7) {
-  background-image: url(assets-index/foto7.jpg); }
+  background-image: url(../assets-index/foto7.jpg); }
 
 .banner-fotos-container div:nth-child(8) {
-  background-image: url(assets-index/foto8.jpg); }
+  background-image: url(../assets-index/foto8.jpg); }
 
 /* Footer */
 hr {
@@ -467,7 +467,7 @@ hr {
 .about-container > div {
   width: 24.3%;
   height: 408px;
-  background-image: url(/views/about/assets/foto-perfil.jpg);
+  background-image: url(../views/about/assets/foto-perfil.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 80% 50%;
