@@ -49,17 +49,15 @@ h1{
 .nav-container ul{
   list-style: none;
   display: inline-block;
-  margin-right: 6%;
 }
 
 .nav-container li{
   display: inline-block;
-  padding-left: .5rem;
+  padding-right: .75rem;
 }
 
 .nav-container a{
   text-decoration: none;
-  width: 100%;
   padding: .1rem .5rem;
   font-size: 1.3rem;
   font-family: $ff-primary;
@@ -278,10 +276,18 @@ hr{
 }
 
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1000px) {
   
   .francisco-container{
       margin-top: 43%;
+  }
+
+  .nav-container li{
+    padding-right: .3rem;
+  }
+
+  .nav-container a{
+    padding: 0 .3rem;
   }
 
 }
@@ -544,7 +550,6 @@ hr{
 
 .nav-container-about li{
   display: inline-block;
-  /* padding: .75rem; */
   text-align: left;
 }
 
