@@ -511,7 +511,7 @@ hr{
 
   .close-menu i{
     color: color(bars);
-    font-size: 6vw;
+    font-size: 2rem;
     cursor:pointer;
   }
 
@@ -562,6 +562,21 @@ hr{
 /* ABOUT.HTML */
 
 
+// Elementos que salen de esta maquetación
+.close-menu-about{
+  display: none;
+}
+
+.social-phone-about{
+  display: none;
+}
+
+.small-bars-about{
+  display: none;
+}
+
+// Elementos que salen de esta maquetación
+
 /* Fondo */
 
 .body-about{
@@ -578,9 +593,7 @@ hr{
   text-align: center;
 }
 
-.small-bars-about{
-  display: none;
-}
+
 
 .nav-container-about > ul{
   position: relative;
@@ -670,10 +683,6 @@ hr{
 
 /* Estilo de linea de división al footer */
 
-// .divition-line-about{
-//   margin: 0 2rem;
-// }
-
 .divition-line-flex-about{
   width: 100%;
   display: flex;
@@ -734,6 +743,7 @@ hr{
   color: color(linkedin);
 }
 
+
 @media screen and (max-width: 900px) {
 
   .body-about{
@@ -784,18 +794,88 @@ hr{
 } 
 
 @media screen and (max-width: 530px){
-      .nav-container-about ul{
+
+  //Elementos que salen de esta maquetación
+      .footer-container-about-main{
         display: none;
+      }
+  //Elementos que salen de esta maquetación
+
+      .about-container{
+        margin-bottom: 2rem;
       }
 
       .small-bars-about{
-        display: block;
-        color: color(bars-dark);
         margin-top: .5rem;
+        display: flex;
+        justify-content: center; 
+        color: color(bars-dark); 
+        cursor: pointer;
+      }
+    
+      .small-bars-about i{
+        font-size: 6vw;
       }
 
-      .small-bars-about i{
+      .mobile-menu-about{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0%;
+        margin: 0;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        background: color(bg-card-mobile-about);
+        transition: top .5s ease-in-out;
+      }
+    
+      .close-menu-about{
+        display: block;
+        position: relative;
+        bottom: 120px;
+        width: 7%;
+        margin-left: 1rem;
+      }
+    
+      .close-menu-about i{
+        color: color(bars);
+        font-size: 2rem;
+        cursor:pointer;
+      }
+    
+      .mobile-menu-about > a{
+        text-decoration: none;
+        text-align: center;
+        padding: 1rem 0;
+        font-size: 1.3rem;
+        font-family: $ff-primary;
+        font-weight: lighter;
+        color: color(text-link-color);
+        transition: background-color .2s ease-out;
+      }
+    
+      .mobile-menu-about > a:hover{
+        background-color: color(text-link-hover);
+        border-radius: 2px;
+        text-decoration: none;
+      }
+    
+      .social-phone-about{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-content: center;
+        margin-top: 8rem;
+      }
+    
+      .social-phone-about a{
+        padding: 0 1.3rem;
+      }
+    
+      .social-phone-about i{
         font-size: 1.5rem;
+        color: color(text-link-color);
       }
 }
 

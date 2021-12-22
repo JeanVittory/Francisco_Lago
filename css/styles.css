@@ -385,7 +385,7 @@ hr {
     margin-left: 1rem; }
   .close-menu i {
     color: #CCC5B9;
-    font-size: 6vw;
+    font-size: 2rem;
     cursor: pointer; }
   .medium-nav-back > a {
     text-decoration: none;
@@ -413,6 +413,15 @@ hr {
 
 /*INDEX.HTML*/
 /* ABOUT.HTML */
+.close-menu-about {
+  display: none; }
+
+.social-phone-about {
+  display: none; }
+
+.small-bars-about {
+  display: none; }
+
 /* Fondo */
 .body-about {
   background-color: #D7B377;
@@ -424,9 +433,6 @@ hr {
   width: 100%;
   margin-top: 1rem;
   text-align: center; }
-
-.small-bars-about {
-  display: none; }
 
 .nav-container-about > ul {
   position: relative;
@@ -574,14 +580,63 @@ hr {
     width: 80%; } }
 
 @media screen and (max-width: 530px) {
-  .nav-container-about ul {
+  .footer-container-about-main {
     display: none; }
+  .about-container {
+    margin-bottom: 2rem; }
   .small-bars-about {
-    display: block;
+    margin-top: .5rem;
+    display: flex;
+    justify-content: center;
     color: #452414;
-    margin-top: .5rem; }
+    cursor: pointer; }
   .small-bars-about i {
-    font-size: 1.5rem; } }
+    font-size: 6vw; }
+  .mobile-menu-about {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0%;
+    margin: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    background: #779bd7;
+    transition: top .5s ease-in-out; }
+  .close-menu-about {
+    display: block;
+    position: relative;
+    bottom: 120px;
+    width: 7%;
+    margin-left: 1rem; }
+  .close-menu-about i {
+    color: #CCC5B9;
+    font-size: 2rem;
+    cursor: pointer; }
+  .mobile-menu-about > a {
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1.3rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: lighter;
+    color: #ccc4b8;
+    transition: background-color .2s ease-out; }
+  .mobile-menu-about > a:hover {
+    background-color: rgba(235, 192, 40, 0.3);
+    border-radius: 2px;
+    text-decoration: none; }
+  .social-phone-about {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
+    margin-top: 8rem; }
+  .social-phone-about a {
+    padding: 0 1.3rem; }
+  .social-phone-about i {
+    font-size: 1.5rem;
+    color: #ccc4b8; } }
 
 @media screen and (max-width: 450px) {
   .nav-container-about h1 > span {
