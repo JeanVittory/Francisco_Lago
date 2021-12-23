@@ -593,18 +593,6 @@ hr{
   text-align: center;
 }
 
-
-
-.nav-container-about > ul{
-  position: relative;
-  width: 100%;
-}
-
-.nav-container-about li{
-  display: inline-block;
-  text-align: left;
-}
-
 .nav-container-about a{
   text-decoration: none;
   padding: .5rem;
@@ -814,14 +802,14 @@ hr{
       }
     
       .small-bars-about i{
-        font-size: 6vw;
+        font-size: 2rem;
       }
 
       .mobile-menu-about{
         width: 100vw;
         height: 100vh;
         position: fixed;
-        top: 0%;
+        top: 0;
         margin: 0;
         display: flex;
         flex-flow: column nowrap;
@@ -833,7 +821,7 @@ hr{
       .close-menu-about{
         display: block;
         position: relative;
-        bottom: 120px;
+        bottom: 7rem;
         width: 7%;
         margin-left: 1rem;
       }
@@ -1134,6 +1122,14 @@ hr{
   display: none;
 }
 
+.mobile-menu-contact{
+  display: none;
+}
+
+.small-bars-contact{
+  display: none;
+}
+
 @media screen and (max-width: 1080px) {
   .body-contact{
     flex-direction: column;
@@ -1242,22 +1238,105 @@ hr{
 
 @media screen and (max-width: 670px){
 
-  .h1-imagenes-container-contact h1 > span{
-    font-size: 3.5rem;
-  }
+// elementos que salen de esta maquetacion
 
   .nav-devices{
     display: none;
   }
 
-  .bars{
-    display:block
+  .footer-container-contact{
+    display: none;  
+  }
+
+// elementos que salen de esta maquetacion
+
+  .h1-imagenes-container-contact h1 > span{
+    font-size: 3.5rem;
+  }
+
+  .form-container-contact{
+    margin-bottom: 2rem;
+  }
+
+  .small-bars-contact{
+    margin-top: .5rem;
+    display: flex;
+    justify-content: center; 
+    color: color(bars-dark); 
+    cursor: pointer;
+  }
+
+  .small-bars-contact i{
+    font-size: 2rem;
+  }
+
+  .mobile-menu-contact{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    background: #ECD1FF;
+    transition: top .5s ease-in-out;
+  }
+
+  .close-menu-contact{
+    display: block;
+    position: relative;
+    bottom: 7rem;
+    width: 7%;
+    margin-left: 1rem;
+    text-align: center
+  }
+
+  .close-menu-contact i{
+    color: color(bars-dark);
+    font-size: 2rem;
+    cursor:pointer;
+  }
+
+  .mobile-menu-contact > a{
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1.3rem;
+    font-family: $ff-primary;
+    font-weight: lighter;
+    color: color(color-text-contact);
+    transition: background-color .2s ease-out;
+  }
+
+  .mobile-menu-contact > a:hover{
+    background-color: color(text-link-hover);
+    border-radius: 2px;
+    text-decoration: none;
+  }
+
+  .social-phone-contact{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
+    margin-top: 8rem;
+  }
+
+  .social-phone-contact a{
+    padding: 0 1.3rem;
+  }
+
+  .social-phone-contact i{
+    font-size: 1.5rem;
+    color: color(color-icons-social-dark);
   }
 
   .h1-imagenes-container-contact i{
     color: color(bars-dark);
     font-size: 1.5rem;
     margin-top: .5rem;
+    cursor: pointer;
   }
 
   .form-footer-contact h2{
@@ -1279,7 +1358,6 @@ hr{
   .form-footer-contact h2{
     font-size: 1.4rem;
   }
-
 
 }
 
@@ -1465,6 +1543,8 @@ hr{
 
   .small-bars-gallery i{
     font-size: 1.5rem;
+    cursor:pointer;
+
   }
 }
 
