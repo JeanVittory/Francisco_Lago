@@ -900,7 +900,9 @@ hr {
   .h1-imagenes-container-contact ul {
     margin: 0 auto; }
   .form-footer-contact h2 {
-    font-size: 2rem; } }
+    font-size: 2rem; }
+  .form-footer-contact h2 {
+    padding-top: 2rem; } }
 
 @media screen and (max-width: 670px) {
   .nav-devices {
@@ -980,6 +982,10 @@ hr {
     font-size: 3rem; }
   .form-footer-contact h2 {
     font-size: 1.4rem; } }
+
+@media screen and (max-width: 450px) {
+  .h1-imagenes-container-contact h1 > span {
+    font-size: 2.5rem; } }
 
 /* FILM.HTML */
 /* Fondo */
