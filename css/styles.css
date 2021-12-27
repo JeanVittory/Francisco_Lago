@@ -999,7 +999,7 @@ hr {
 
 .nav-container-film a {
   text-decoration: none;
-  padding: .1rem .5rem;
+  padding: .5rem;
   margin-left: 1rem;
   font-size: 1.3rem;
   font-family: "Roboto", sans-serif;
@@ -1110,10 +1110,9 @@ hr {
     font-size: 3rem; } }
 
 @media screen and (max-width: 530px) {
-  .nav-film {
-    display: none; }
   .footer-container-film,
-  .divition-line-film {
+  .divition-line-film,
+  .nav-film {
     display: none; }
   .video-container-film {
     margin-bottom: 2rem; }
