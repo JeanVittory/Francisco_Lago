@@ -363,9 +363,10 @@ hr {
     display: flex;
     justify-content: center;
     color: #CCC5B9;
-    cursor: pointer; }
+    cursor: pointer;
+    margin-top: .5rem; }
   .small-bars i {
-    font-size: 6vw; }
+    font-size: 2rem; }
   .banner-fotos-container {
     margin-top: .5rem; }
   /* Estos estilos corresponden al panel de navegación que se desplegaria por medio de JS
@@ -601,7 +602,7 @@ hr {
   .close-menu-about {
     display: block;
     position: absolute;
-    top: 2rem;
+    top: 1rem;
     width: 7%;
     margin-left: 1rem; }
   .close-menu-about i {
@@ -935,7 +936,7 @@ hr {
   .close-menu-contact {
     display: block;
     position: absolute;
-    top: 2rem;
+    top: 1rem;
     width: 7%;
     margin-left: 1rem;
     text-align: center; }
@@ -1120,7 +1121,7 @@ hr {
   .nav-container-film h1 > span {
     font-size: 3rem; } }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 670px) {
   .nav-film {
     display: none; }
   .footer-container-film,
@@ -1153,7 +1154,7 @@ hr {
   .close-menu-film {
     display: block;
     position: absolute;
-    top: 2rem;
+    top: 1rem;
     width: 7%;
     margin-left: 1rem;
     text-align: center; }
