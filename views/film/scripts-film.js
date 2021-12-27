@@ -11,5 +11,5 @@ function show(){
 }
 
 function close(){
-    $mobileMenuFilm.style.top = "-100%"
+    $mobileMenuFilm.style.top = "-200%"
 }

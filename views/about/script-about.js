@@ -11,5 +11,5 @@ function show(){
 }
 
 function close(){
-    $mobileMenuAbout.style.top = "-100%"
+    $mobileMenuAbout.style.top = "-200%"
 }
