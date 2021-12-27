@@ -60,15 +60,17 @@ h1 {
 
 .nav-container ul {
   list-style: none;
-  display: inline-block; }
+  display: inline-block;
+  text-align: center; }
 
 .nav-container li {
   display: inline-block;
-  padding-right: .75rem; }
+  padding-right: .75rem;
+  text-align: center; }
 
 .nav-container a {
   text-decoration: none;
-  padding: .1rem .5rem;
+  padding: .5rem;
   font-size: 1.3rem;
   font-family: "Roboto", sans-serif;
   font-weight: lighter;
@@ -294,11 +296,7 @@ hr {
     font-size: 1.3rem;
     font-family: "Roboto", sans-serif;
     font-weight: lighter;
-    color: #ccc4b8;
-    transition: background-color .2s ease-out; }
-  .medium-nav-back > a:hover {
-    background-color: rgba(235, 192, 40, 0.3);
-    border-radius: 2px; }
+    color: #ccc4b8; }
   .medium-nav-back,
   .medium-letter-front {
     overflow: hidden;
@@ -363,8 +361,8 @@ hr {
     display: flex;
     justify-content: center;
     color: #CCC5B9;
-    cursor: pointer;
-    margin-top: .5rem; }
+    margin-top: .5rem;
+    cursor: pointer; }
   .small-bars i {
     font-size: 2rem; }
   .banner-fotos-container {
@@ -383,10 +381,11 @@ hr {
     background: #5e28eb;
     transition: top .5s ease-in-out; }
   .close-menu {
-    position: relative;
-    bottom: 120px;
+    position: absolute;
+    top: 1rem;
     width: 7%;
-    margin-left: 1rem; }
+    margin-left: 1rem;
+    text-align: center; }
   .close-menu i {
     display: block;
     color: #CCC5B9;
@@ -399,11 +398,7 @@ hr {
     font-size: 1.3rem;
     font-family: "Roboto", sans-serif;
     font-weight: lighter;
-    color: #ccc4b8;
-    transition: background-color .2s ease-out; }
-  .medium-nav-back > a:hover {
-    background-color: rgba(235, 192, 40, 0.3);
-    border-radius: 2px; }
+    color: #ccc4b8; }
   .social-phone {
     display: flex;
     flex-flow: row nowrap;
@@ -575,7 +570,7 @@ hr {
     width: 80%; } }
 
 @media screen and (max-width: 530px) {
-  .footer-container-about-main {
+  .footer-container-about {
     display: none; }
   .about-container {
     margin-bottom: 2rem; }
@@ -617,12 +612,7 @@ hr {
     font-size: 1.3rem;
     font-family: "Roboto", sans-serif;
     font-weight: lighter;
-    color: #ccc4b8;
-    transition: background-color .2s ease-out; }
-  .mobile-menu-about > a:hover {
-    background-color: rgba(235, 192, 40, 0.3);
-    border-radius: 2px;
-    text-decoration: none; }
+    color: #ccc4b8; }
   .social-phone-about {
     display: flex;
     flex-flow: row nowrap;
@@ -936,7 +926,6 @@ hr {
     background: #ECD1FF;
     transition: right .5s ease-in-out; }
   .close-menu-contact {
-    display: block;
     position: absolute;
     top: 1rem;
     width: 7%;
@@ -953,12 +942,7 @@ hr {
     font-size: 1.3rem;
     font-family: "Roboto", sans-serif;
     font-weight: lighter;
-    color: #452414;
-    transition: background-color .2s ease-out; }
-  .mobile-menu-contact > a:hover {
-    background-color: rgba(235, 192, 40, 0.3);
-    border-radius: 2px;
-    text-decoration: none; }
+    color: #452414; }
   .social-phone-contact {
     display: flex;
     flex-flow: row nowrap;
@@ -1112,6 +1096,8 @@ hr {
   display: none; }
 
 @media screen and (max-width: 1024px) {
+  .nav-container-film {
+    padding: 1rem 0rem 1rem 0; }
   .nav-container-flex-film {
     flex-flow: column nowrap; }
   .nav-film {
@@ -1123,7 +1109,7 @@ hr {
   .nav-container-film h1 > span {
     font-size: 3rem; } }
 
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 530px) {
   .nav-film {
     display: none; }
   .footer-container-film,
@@ -1171,12 +1157,7 @@ hr {
     font-size: 1.3rem;
     font-family: "Roboto", sans-serif;
     font-weight: lighter;
-    color: #ccc4b8;
-    transition: background-color .2s ease-out; }
-  .mobile-menu-film > a:hover {
-    background-color: rgba(235, 192, 40, 0.3);
-    border-radius: 2px;
-    text-decoration: none; }
+    color: #ccc4b8; }
   .social-phone-film {
     display: flex;
     flex-flow: row nowrap;
@@ -1523,7 +1504,8 @@ hr {
   .small-bars-gallery {
     display: block;
     color: #452414;
-    margin-top: .5rem; }
+    margin-top: .5rem;
+    cursor: pointer; }
   .small-bars-gallery i {
     font-size: 1.5rem; } }
 

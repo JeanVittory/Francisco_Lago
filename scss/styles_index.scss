@@ -50,16 +50,18 @@ h1{
 .nav-container ul{
   list-style: none;
   display: inline-block;
+  text-align: center;
 }
 
 .nav-container li{
   display: inline-block;
   padding-right: .75rem;
+  text-align: center;
 }
 
 .nav-container a{
   text-decoration: none;
-  padding: .1rem .5rem;
+  padding: .5rem;
   font-size: 1.3rem;
   font-family: $ff-primary;
   font-weight: lighter;
@@ -369,12 +371,6 @@ hr{
     font-family: $ff-primary;
     font-weight: lighter;
     color: color(text-link-color);
-    transition: background-color .2s ease-out;
-  }
-
-  .medium-nav-back > a:hover{
-    background-color: color(text-link-hover);
-    border-radius: 2px;
   }
 
   .medium-nav-back, 
@@ -477,8 +473,8 @@ hr{
     display: flex;
     justify-content: center; 
     color: color(bars); 
-    cursor: pointer;
     margin-top: .5rem;
+    cursor: pointer;
   }
 
   .small-bars i{
@@ -507,10 +503,11 @@ hr{
   }
 
   .close-menu{
-    position: relative;
-    bottom: 120px;
+    position: absolute;
+    top: 1rem;
     width: 7%;
     margin-left: 1rem;
+    text-align: center;
   }
 
   .close-menu i{
@@ -529,12 +526,7 @@ hr{
     font-family: $ff-primary;
     font-weight: lighter;
     color: color(text-link-color);
-    transition: background-color .2s ease-out;
-  }
 
-  .medium-nav-back > a:hover{
-    background-color: color(text-link-hover);
-    border-radius: 2px;
   }
 
   .social-phone{
@@ -766,8 +758,6 @@ hr{
     justify-content: space-between;
     align-items: center;
   }
-
-
 }
 
 @media screen and (max-width: 650px){
@@ -785,7 +775,7 @@ hr{
 @media screen and (max-width: 530px){
 
   //Elementos que salen de esta maquetación
-      .footer-container-about-main{
+      .footer-container-about{
         display: none;
       }
   //Elementos que salen de esta maquetación
@@ -819,7 +809,6 @@ hr{
         background: color(bg-card-mobile-about);
         cursor: pointer;
         transition: left .5s ease-in-out;
-        
       }
     
       .close-menu-about{
@@ -844,13 +833,6 @@ hr{
         font-family: $ff-primary;
         font-weight: lighter;
         color: color(text-link-color);
-        transition: background-color .2s ease-out;
-      }
-    
-      .mobile-menu-about > a:hover{
-        background-color: color(text-link-hover);
-        border-radius: 2px;
-        text-decoration: none;
       }
     
       .social-phone-about{
@@ -1299,7 +1281,6 @@ hr{
   }
 
   .close-menu-contact{
-    display: block;
     position: absolute;
     top: 1rem;
     width: 7%;
@@ -1321,13 +1302,6 @@ hr{
     font-family: $ff-primary;
     font-weight: lighter;
     color: color(color-text-contact);
-    transition: background-color .2s ease-out;
-  }
-
-  .mobile-menu-contact > a:hover{
-    background-color: color(text-link-hover);
-    border-radius: 2px;
-    text-decoration: none;
   }
 
   .social-phone-contact{
@@ -1542,6 +1516,10 @@ hr{
 }
 
 @media screen and (max-width: 1024px){
+
+  .nav-container-film{
+    padding: 1rem 0rem 1rem 0;
+  }
   
   .nav-container-flex-film{
     flex-flow: column nowrap;
@@ -1562,7 +1540,7 @@ hr{
   }
 }
 
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 530px) {
 
   .nav-film{
     display: none;
@@ -1630,13 +1608,6 @@ hr{
     font-family: $ff-primary;
     font-weight: lighter;
     color: color(text-link-color);
-    transition: background-color .2s ease-out;
-  }
-
-  .mobile-menu-film > a:hover{
-    background-color: color(text-link-hover);
-    border-radius: 2px;
-    text-decoration: none;
   }
 
   .social-phone-film{
@@ -2188,6 +2159,7 @@ hr{
       display: block;
       color: color(bars-dark);
       margin-top: .5rem;
+      cursor: pointer;
     }
 
     .small-bars-gallery i{
