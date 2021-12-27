@@ -14,6 +14,6 @@ function show(){
 }
 
 function close(){
-    $mediumNavBack.style.top = "-100%"
+    $mediumNavBack.style.top = "-100vh"
 }
 
