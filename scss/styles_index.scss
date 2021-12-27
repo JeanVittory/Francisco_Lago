@@ -598,10 +598,14 @@ hr{
   color: color(color-nav-dark);
 }
 
-.nav-container-about a:hover{
-  text-decoration: line-through;
-  text-decoration-thickness: 1.5px;
+@media screen and (min-width: 531px) {
+
+  .nav-container-about a:hover{
+    text-decoration: line-through;
+    text-decoration-thickness: 1.5px;
+  }
 }
+
 
 .nav-container-about > h1 span{
   font-size: 4.5rem;
