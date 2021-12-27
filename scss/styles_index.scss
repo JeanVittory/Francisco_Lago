@@ -1515,24 +1515,24 @@ hr{
   display: none;
 }
 
-@media screen and (max-width: 1024px){
+// @media screen and (max-width: 1024px){
 
-  .nav-container-film{
-    padding: 1rem 0rem 1rem 0;
-  }
+//   .nav-container-film{
+//     padding: 1rem 0rem 1rem 0;
+//   }
   
-  .nav-container-flex-film{
-    flex-flow: column nowrap;
-  }
+//   .nav-container-flex-film{
+//     flex-flow: column nowrap;
+//   }
 
-  .nav-film{
-    margin: 0;
-  }
+//   .nav-film{
+//     margin: 0;
+//   }
 
-  .nav-container-film h1 > span{
-    font-size: 4.5rem;
-  }
-}
+//   .nav-container-film h1 > span{
+//     font-size: 4.5rem;
+//   }
+// }
 
 // @media screen and (max-width: 710px) {
 //   .nav-container-film h1 > span{
