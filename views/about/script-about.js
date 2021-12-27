@@ -7,9 +7,9 @@ $closeMenuAbout.addEventListener("click", close)
 
 
 function show(){
-    $mobileMenuAbout.style.top = "0"
+    $mobileMenuAbout.style.left = "0"
 }
 
 function close(){
-    $mobileMenuAbout.style.top = "-200%"
+    $mobileMenuAbout.style.left = "-200%"
 }
