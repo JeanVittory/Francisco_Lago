@@ -7,9 +7,9 @@ $closeMenuContact.addEventListener("click", close)
 
 
 function show(){
-    $mobileMenuContact.style.top = "0"
+    $mobileMenuContact.style.right = "0"
 }
 
 function close(){
-    $mobileMenuContact.style.top = "-200%"
+    $mobileMenuContact.style.right = "-200%"
 }

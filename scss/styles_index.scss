@@ -810,6 +810,7 @@ hr{
         width: 100vw;
         height: 100vh;
         position: fixed;
+        top: 0;
         left: -200%;
         margin: 0;
         display: flex;
@@ -817,7 +818,8 @@ hr{
         justify-content: center;
         background: color(bg-card-mobile-about);
         cursor: pointer;
-        transition: top .5s ease-in-out;
+        transition: left .5s ease-in-out;
+        
       }
     
       .close-menu-about{
@@ -1286,13 +1288,14 @@ hr{
     width: 100vw;
     height: 100vh;
     position: fixed;
-    top: -200%;
+    top: 0;
+    right: -200%;
     margin: 0;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     background: #ECD1FF;
-    transition: top .5s ease-in-out;
+    transition: right .5s ease-in-out;
   }
 
   .close-menu-contact{
