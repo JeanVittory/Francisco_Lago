@@ -1540,12 +1540,16 @@ hr{
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 530px) {
 
   .footer-container-film,
   .divition-line-film,
   .nav-film{
     display: none;
+  }
+
+  body{
+    background-color: red;
   }
 
   .video-container-film{
