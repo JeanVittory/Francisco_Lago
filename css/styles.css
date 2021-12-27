@@ -1105,11 +1105,7 @@ hr {
   .nav-container-film h1 > span {
     font-size: 4.5rem; } }
 
-@media screen and (max-width: 710px) {
-  .nav-container-film h1 > span {
-    font-size: 3rem; } }
-
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 1024px) {
   .footer-container-film,
   .divition-line-film,
   .nav-film {
