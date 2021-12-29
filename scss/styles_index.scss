@@ -862,6 +862,7 @@ hr{
     font-size: 2.5rem;
   }
 }
+
 /* ABOUT.HTML */
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1408,9 +1409,11 @@ hr{
   transition: background-color .2s ease-in-out;
 }
 
-.nav-container-film a:hover{
-  background-color: rgba(255, 68, 0, .5);
-  border-radius: 2px;
+@media screen and (min-width: 530px) {
+  .nav-container-film a:hover{
+    background-color: rgba(255, 68, 0, .5);
+    border-radius: 2px;
+  }
 }
 
 .nav-container-film > h1 span{
@@ -1565,7 +1568,6 @@ hr{
     display: flex;
     justify-content: center; 
     color: color(bars-dark); 
-    cursor: pointer;
   }
 
   .small-bars-film i{
@@ -1598,7 +1600,6 @@ hr{
   .close-menu-film i{
     color: color(bars);
     font-size: 2rem;
-    cursor:pointer;
   }
 
   .mobile-menu-film > a{
@@ -1682,30 +1683,30 @@ hr{
   align-items: center;
 }
 
-.nav-container-gallery ul{
+.nav-gallery{
   list-style: none;
   display: flex;
-  flex-flow: row wrap;
-  
-}
-
-.nav-container-gallery li{
-  padding: 0 .75rem;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  margin-right: 2rem;
 }
 
 .nav-container-gallery a{
   text-decoration: none;
+  padding: .5rem;
+  margin-left: 1rem;
   font-size: 1.3rem;
-  padding: .1rem .5rem;
   font-family: $ff-primary;
-  font-weight: lighter;
-  color: color(color-nav-light);
+  font-weight:300;
+  color: color(color-nav-dark);
   transition: background-color .2s ease-in-out;
 }
 
-.nav-container-gallery a:hover{
-  background-color: color(text-link-hover);
-  border-radius: 2px;
+@media screen and (min-width: 570px) {
+  .nav-container-gallery a:hover{
+    background-color: rgba(255, 68, 0, .5);
+    border-radius: 2px;
+  }
 }
 
 .nav-container-gallery h1{
@@ -1955,11 +1956,6 @@ hr{
   grid-area: foto32;
 }
 
-.banner-grid-1-gallery div:hover{
-  
-  transition: transform .5s ease-in-out;
-
-}
 
 /* Estilos de fotos del banner grid 1*/
 
@@ -2117,6 +2113,14 @@ hr{
   display: none;
 }
 
+.social-phone-gallery{
+  display: none;
+}
+
+.mobile-menu-gallery{
+  display: none;
+}
+
 @media screen and (max-width: 1024px) {
     .nav-container-flex-gallery{
       flex-flow: column nowrap;
@@ -2152,7 +2156,7 @@ hr{
 }
 
 @media screen and (max-width:570px) {
-    .nav-container-gallery ul{
+    .nav-gallery{
       display: none;
     }
 
@@ -2160,12 +2164,68 @@ hr{
       display: block;
       color: color(bars-dark);
       margin-top: .5rem;
-      cursor: pointer;
     }
 
     .small-bars-gallery i{
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
+  
+    .mobile-menu-gallery{
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      top: -200%;
+      left: 0;
+      margin: 0;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      background: color(bg-card-mobile-gallery);
+      transition: top .5s ease-in-out;
+    }
+  
+    .close-menu-gallery{
+      display: block;
+      position: absolute;
+      top: 1rem;
+      width: 7%;
+      margin-left: 1rem;
+      text-align: center;
+    }
+  
+    .close-menu-gallery i{
+      color: color(bars);
+      font-size: 2rem;
+    }
+  
+    .mobile-menu-gallery > a{
+      text-decoration: none;
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 1.3rem;
+      font-family: $ff-primary;
+      font-weight: lighter;
+      color: color(text-link-color);
+    }
+  
+    .social-phone-gallery{
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-content: center;
+      margin-top: 8rem;
+    }
+  
+    .social-phone-gallery a{
+      padding: 0 1.3rem;
+    }
+  
+    .social-phone-gallery i{
+      font-size: 1.5rem;
+      color: color(text-link-color);
+    }
+
+
 }
 
 @media screen and (max-width: 500px) {
@@ -2180,5 +2240,11 @@ hr{
 
   .banner-fotos-container-gallery{
     width: 500%;
+  }
+}
+
+@media screen and (max-width: 360px){
+  .nav-container-gallery h1 > span{
+    font-size: 2.3rem;
   }
 }
