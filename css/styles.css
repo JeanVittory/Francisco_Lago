@@ -46,7 +46,8 @@ h1 {
 .medium-letter-front,
 .medium-nav-back,
 .small-bars,
-.close-menu i {
+.close-menu i,
+.social-phone {
   display: none; }
 
 /*Sección navegacion + titulo*/
@@ -85,6 +86,9 @@ h1 {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end; }
+
+.medium-nav-back a {
+  cursor: default; }
 
 /* Estilos del H1 principal */
 .francisco-container {
@@ -236,8 +240,9 @@ hr {
 .footer-container .fa-linkedin:hover {
   color: #0077B5; }
 
-.social-phone {
-  display: none; }
+@media screen and (min-width: 500px) {
+  .medium-nav-back a {
+    cursor: pointer; } }
 
 @media screen and (max-width: 1000px) {
   .francisco-container {
@@ -310,8 +315,7 @@ hr {
     text-align: center; }
   .close-menu i {
     color: #CCC5B9;
-    font-size: 2rem;
-    cursor: pointer; }
+    font-size: 2rem; }
   .medium-letter-front img {
     width: 100%;
     height: auto;
@@ -361,8 +365,7 @@ hr {
     display: flex;
     justify-content: center;
     color: #CCC5B9;
-    margin-top: .5rem;
-    cursor: pointer; }
+    margin-top: .5rem; }
   .small-bars i {
     font-size: 2rem; }
   .banner-fotos-container {
@@ -389,8 +392,7 @@ hr {
   .close-menu i {
     display: block;
     color: #CCC5B9;
-    font-size: 2rem;
-    cursor: pointer; }
+    font-size: 2rem; }
   .medium-nav-back > a {
     text-decoration: none;
     text-align: center;
@@ -413,12 +415,8 @@ hr {
 
 /*INDEX.HTML*/
 /* ABOUT.HTML */
-.close-menu-about {
-  display: none; }
-
-.social-phone-about {
-  display: none; }
-
+.close-menu-about,
+.social-phone-about,
 .small-bars-about {
   display: none; }
 
@@ -579,8 +577,7 @@ hr {
     margin-top: .5rem;
     display: flex;
     justify-content: center;
-    color: #452414;
-    cursor: pointer; }
+    color: #452414; }
   .small-bars-about i {
     font-size: 2rem; }
   .mobile-menu-about {
@@ -594,7 +591,6 @@ hr {
     flex-flow: column nowrap;
     justify-content: center;
     background: #779bd7;
-    cursor: pointer;
     transition: left .5s ease-in-out; }
   .close-menu-about {
     display: block;
@@ -604,8 +600,7 @@ hr {
     margin-left: 1rem; }
   .close-menu-about i {
     color: #CCC5B9;
-    font-size: 2rem;
-    cursor: pointer; }
+    font-size: 2rem; }
   .mobile-menu-about > a {
     text-decoration: none;
     text-align: center;
@@ -613,7 +608,8 @@ hr {
     font-size: 1.3rem;
     font-family: "Roboto", sans-serif;
     font-weight: lighter;
-    color: #ccc4b8; }
+    color: #ccc4b8;
+    cursor: default; }
   .social-phone-about {
     display: flex;
     flex-flow: row nowrap;
@@ -621,7 +617,8 @@ hr {
     align-content: center;
     margin-top: 8rem; }
   .social-phone-about a {
-    padding: 0 1.3rem; }
+    padding: 0 1.3rem;
+    cursor: default; }
   .social-phone-about i {
     font-size: 1.5rem;
     color: #ccc4b8; } }
@@ -898,8 +895,7 @@ hr {
     padding-top: 2rem; } }
 
 @media screen and (max-width: 670px) {
-  .nav-devices {
-    display: none; }
+  .nav-devices,
   .footer-container-contact {
     display: none; }
   .h1-imagenes-container-contact h1 > span {
@@ -910,8 +906,7 @@ hr {
     margin-top: .5rem;
     display: flex;
     justify-content: center;
-    color: #452414;
-    cursor: pointer; }
+    color: #452414; }
   .small-bars-contact i {
     font-size: 2rem; }
   .mobile-menu-contact {
@@ -934,8 +929,7 @@ hr {
     text-align: center; }
   .close-menu-contact i {
     color: #452414;
-    font-size: 2rem;
-    cursor: pointer; }
+    font-size: 2rem; }
   .mobile-menu-contact > a {
     text-decoration: none;
     text-align: center;
@@ -943,7 +937,8 @@ hr {
     font-size: 1.3rem;
     font-family: "Roboto", sans-serif;
     font-weight: lighter;
-    color: #452414; }
+    color: #452414;
+    cursor: default; }
   .social-phone-contact {
     display: flex;
     flex-flow: row nowrap;
@@ -951,15 +946,15 @@ hr {
     align-content: center;
     margin-top: 8rem; }
   .social-phone-contact a {
-    padding: 0 1.3rem; }
+    padding: 0 1.3rem;
+    cursor: default; }
   .social-phone-contact i {
     font-size: 1.5rem;
     color: #452414; }
   .h1-imagenes-container-contact i {
     color: #452414;
     font-size: 1.5rem;
-    margin-top: .5rem;
-    cursor: pointer; }
+    margin-top: .5rem; }
   .form-footer-contact h2 {
     font-size: 1.8rem; }
   .form-footer-contact p {
@@ -1156,7 +1151,8 @@ hr {
     font-size: 1.3rem;
     font-family: "Roboto", sans-serif;
     font-weight: lighter;
-    color: #ccc4b8; }
+    color: #ccc4b8;
+    cursor: default; }
   .social-phone-film {
     display: flex;
     flex-flow: row nowrap;
@@ -1164,7 +1160,8 @@ hr {
     align-content: center;
     margin-top: 8rem; }
   .social-phone-film a {
-    padding: 0 1.3rem; }
+    padding: 0 1.3rem;
+    cursor: default; }
   .social-phone-film i {
     font-size: 1.5rem;
     color: #ccc4b8; } }
@@ -1184,6 +1181,11 @@ hr {
   background-color: #9E2A2B;
   overflow-x: initial;
   overflow-y: hidden; }
+
+.small-bars-gallery,
+.social-phone-gallery,
+.mobile-menu-gallery {
+  display: none; }
 
 /*Navegador + Logo*/
 .nav-container-gallery {
@@ -1472,15 +1474,6 @@ hr {
 .banner-grid-4-gallery div:nth-child(8) {
   background-image: url(../views/gallery/assets/foto32.jpg); }
 
-.small-bars-gallery {
-  display: none; }
-
-.social-phone-gallery {
-  display: none; }
-
-.mobile-menu-gallery {
-  display: none; }
-
 @media screen and (max-width: 1024px) {
   .nav-container-flex-gallery {
     flex-flow: column nowrap; }
@@ -1539,7 +1532,8 @@ hr {
     font-size: 1.3rem;
     font-family: "Roboto", sans-serif;
     font-weight: lighter;
-    color: #ccc4b8; }
+    color: #ccc4b8;
+    cursor: default; }
   .social-phone-gallery {
     display: flex;
     flex-flow: row nowrap;
@@ -1547,7 +1541,8 @@ hr {
     align-content: center;
     margin-top: 8rem; }
   .social-phone-gallery a {
-    padding: 0 1.3rem; }
+    padding: 0 1.3rem;
+    cursor: default; }
   .social-phone-gallery i {
     font-size: 1.5rem;
     color: #ccc4b8; } }

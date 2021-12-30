@@ -30,7 +30,8 @@ h1{
 .medium-letter-front, 
 .medium-nav-back,
 .small-bars,
-.close-menu i{
+.close-menu i,
+.social-phone{
   display: none;
 }
 
@@ -78,6 +79,10 @@ h1{
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
+}
+
+.medium-nav-back a{
+  cursor: default
 }
 
 /* Estilos del H1 principal */
@@ -278,8 +283,12 @@ hr{
   color: color(linkedin);
 }
 
-.social-phone{
-  display: none;
+
+
+@media screen and (min-width:500px){
+  .medium-nav-back a{
+    cursor: pointer;
+  }
 }
 
 
@@ -391,7 +400,7 @@ hr{
   .close-menu i{
     color: color(bars);
     font-size: 2rem;
-    cursor:pointer;
+    
   }
 
   .medium-letter-front img{
@@ -474,7 +483,6 @@ hr{
     justify-content: center; 
     color: color(bars); 
     margin-top: .5rem;
-    cursor: pointer;
   }
 
   .small-bars i{
@@ -514,7 +522,6 @@ hr{
     display: block;
     color: color(bars);
     font-size: 2rem;
-    cursor:pointer;
   }
 
 
@@ -560,14 +567,9 @@ hr{
 
 
 // Elementos que salen de esta maquetación
-.close-menu-about{
-  display: none;
-}
 
-.social-phone-about{
-  display: none;
-}
-
+.close-menu-about,
+.social-phone-about,
 .small-bars-about{
   display: none;
 }
@@ -793,7 +795,6 @@ hr{
         display: flex;
         justify-content: center; 
         color: color(bars-dark); 
-        cursor: pointer;
       }
     
       .small-bars-about i{
@@ -811,7 +812,6 @@ hr{
         flex-flow: column nowrap;
         justify-content: center;
         background: color(bg-card-mobile-about);
-        cursor: pointer;
         transition: left .5s ease-in-out;
       }
     
@@ -826,7 +826,6 @@ hr{
       .close-menu-about i{
         color: color(bars);
         font-size: 2rem;
-        cursor:pointer;
       }
     
       .mobile-menu-about > a{
@@ -837,6 +836,7 @@ hr{
         font-family: $ff-primary;
         font-weight: lighter;
         color: color(text-link-color);
+        cursor: default;
       }
     
       .social-phone-about{
@@ -849,6 +849,7 @@ hr{
     
       .social-phone-about a{
         padding: 0 1.3rem;
+        cursor: default;
       }
     
       .social-phone-about i{
@@ -1241,13 +1242,11 @@ hr{
 
 // elementos que salen de esta maquetacion
 
-  .nav-devices{
+  .nav-devices,
+  .footer-container-contact{
     display: none;
   }
 
-  .footer-container-contact{
-    display: none;  
-  }
 
 // elementos que salen de esta maquetacion
 
@@ -1264,7 +1263,6 @@ hr{
     display: flex;
     justify-content: center; 
     color: color(bars-dark); 
-    cursor: pointer;
   }
 
   .small-bars-contact i{
@@ -1296,7 +1294,6 @@ hr{
   .close-menu-contact i{
     color: color(bars-dark);
     font-size: 2rem;
-    cursor:pointer;
   }
 
   .mobile-menu-contact > a{
@@ -1307,6 +1304,7 @@ hr{
     font-family: $ff-primary;
     font-weight: lighter;
     color: color(color-text-contact);
+    cursor: default;
   }
 
   .social-phone-contact{
@@ -1319,6 +1317,7 @@ hr{
 
   .social-phone-contact a{
     padding: 0 1.3rem;
+    cursor: default;
   }
 
   .social-phone-contact i{
@@ -1330,7 +1329,6 @@ hr{
     color: color(bars-dark);
     font-size: 1.5rem;
     margin-top: .5rem;
-    cursor: pointer;
   }
 
   .form-footer-contact h2{
@@ -1610,6 +1608,7 @@ hr{
     font-family: $ff-primary;
     font-weight: lighter;
     color: color(text-link-color);
+    cursor: default;
   }
 
   .social-phone-film{
@@ -1622,6 +1621,7 @@ hr{
 
   .social-phone-film a{
     padding: 0 1.3rem;
+    cursor: default;
   }
 
   .social-phone-film i{
@@ -1666,6 +1666,13 @@ hr{
   background-color: color(bg-gallery);
   overflow-x: initial;
   overflow-y: hidden;
+}
+
+
+.small-bars-gallery,
+.social-phone-gallery,
+.mobile-menu-gallery{
+  display: none;
 }
 
 /*Navegador + Logo*/
@@ -2109,17 +2116,6 @@ hr{
   background-image: url(../views/gallery/assets/foto32.jpg);
 }
 
-.small-bars-gallery{
-  display: none;
-}
-
-.social-phone-gallery{
-  display: none;
-}
-
-.mobile-menu-gallery{
-  display: none;
-}
 
 @media screen and (max-width: 1024px) {
     .nav-container-flex-gallery{
@@ -2206,6 +2202,7 @@ hr{
       font-family: $ff-primary;
       font-weight: lighter;
       color: color(text-link-color);
+      cursor: default;
     }
   
     .social-phone-gallery{
@@ -2218,14 +2215,13 @@ hr{
   
     .social-phone-gallery a{
       padding: 0 1.3rem;
+      cursor: default;
     }
   
     .social-phone-gallery i{
       font-size: 1.5rem;
       color: color(text-link-color);
     }
-
-
 }
 
 @media screen and (max-width: 500px) {
