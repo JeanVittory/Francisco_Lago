@@ -656,6 +656,13 @@ hr{
   line-height: 1.43rem;
   text-align: center;
   text-transform: uppercase;
+  
+}
+
+.about-container p > a{
+  text-decoration: none;
+  color: color(color-text-about);
+  font-family: $ff-primary;
 }
 
 /* Estilos de imagen de perfil */

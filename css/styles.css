@@ -485,6 +485,11 @@ hr {
   text-align: center;
   text-transform: uppercase; }
 
+.about-container p > a {
+  text-decoration: none;
+  color: #44342c;
+  font-family: "Roboto", sans-serif; }
+
 /* Estilos de imagen de perfil */
 .about-container > div {
   width: 24.3%;
